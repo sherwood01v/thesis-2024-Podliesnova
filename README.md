@@ -1,4 +1,9 @@
 # thesis-2024-Podliesnova
+## Contents: 
+* [1. Introduction](#1-introduction)
+* [2. Pre-processing and detection of blink and ErrP events](#2-pre-processing-and-detection-of-blink-and-errp-events)
+* [3. Applying custom ground for Gazebo simulation](#3-applying-custom-ground-for-gazebo-simulation)
+* [4. Running the simulation](#4-running-the-simulation)
 ## 1. Introduction
 The rapidly growing field of Brain-Computer Interfaces (BCIs) provides an innovative method for human-robot interaction, enabling machines to be controlled directly via brain signals. This repository supports study that investigates the use of BCI technology to monitor the operator’s brain activity in real-time and detect robot malfunctions through the identification of Error-Related Potentials (ErrPs).
 
@@ -7,7 +12,7 @@ It contains:
 2. Created custom texture for Gazebo simulation.
 3. ROS package with real-time system for acquiring, processing, and detecting blink/ErrP events together with working simulation of real-world application.
 
-## 2. Pre-processing and detection of blink/ErrP events
+## 2. Pre-processing and detection of blink and ErrP events
 Jupyter notebook files `blink_events/blinking_dataset_pipeline.ipynb` and `errp_events/errp.ipynb` were used for processing and training ML models from open-source datasets. Corresponding best performance models can be found in `models/` folder.
 ## 3. Applying custom ground for Gazebo simulation
 1. Place `texture_ground_model/line/materials/textures/ground7.png` to `/usr/share/gazebo-(version_number)/media/materials/textures/` using `sudo`.
